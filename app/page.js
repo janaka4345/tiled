@@ -2,9 +2,11 @@
 import Pattern2 from "@/components/Pattern2";
 import { useRef } from "react";
 import * as htmlToImage from "html-to-image";
+import download from "downloadjs";
 
 export default function page() {
   const svgRef = useRef();
+  let img
 
   function handleClick() {
     const svgNode = svgRef.current;
@@ -15,10 +17,13 @@ export default function page() {
       .toPng(svgNode)
       .then(function (dataUrl) {
         // Once converted, you can handle the dataUrl (image URL)
-        blob = new Blob([dataUrl], { type: "image/png" });
-        console.log(blob);
         // console.log(dataUrl);
         // You can also create an <img> element and append it wherever you want, or use it in any other way
+        // img = new Image();
+        // img.src = dataUrl;
+        download(dataUrl, 'my-node.png');
+        // blob = new Blob([dataUrl], { type: "image/png" });
+        // console.log(blob);
       })
       .catch(function (error) {
         console.error("Error:", error);
@@ -44,6 +49,7 @@ export default function page() {
       >
         Clear All
       </button>
+      <img src={img} alt="image" />
     </>
   );
 }

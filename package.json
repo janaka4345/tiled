@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "downloadjs": "^1.4.7",
     "html-to-image": "^1.11.11",
     "next": "14.1.0",
     "react": "^18",
