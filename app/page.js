@@ -29,9 +29,9 @@ export default function page() {
     <>
       <div
         ref={svgRef}
-        className="grid grid-rows-3 grid-cols-3 w-[600px] h-[600px]"
+        className="grid grid-rows-9 grid-cols-9 w-[600px] h-[600px]"
       >
-        {[...Array(9)].map((_, i) => (
+        {[...Array(81)].map((_, i) => (
           <Pattern2 key={i} />
         ))}
       </div>
