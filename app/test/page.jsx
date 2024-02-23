@@ -5,23 +5,24 @@ import * as htmlToImage from "html-to-image";
 
 export default function page() {
   const svgRef = useRef();
-  
+
   function handleClick() {
     const svgNode = svgRef.current;
+    let blob = "";
 
     // Convert the SVG node to an image
     htmlToImage
       .toPng(svgNode)
       .then(function (dataUrl) {
         // Once converted, you can handle the dataUrl (image URL)
-        console.log(dataUrl);
+        blob = new Blob([dataUrl], { type: "image/png" });
+        console.log(blob);
+        // console.log(dataUrl);
         // You can also create an <img> element and append it wherever you want, or use it in any other way
       })
       .catch(function (error) {
         console.error("Error:", error);
       });
-    // const blob = new Blob([svgRef]);
-    // console.log(blob);
   }
 
   return (
@@ -37,7 +38,10 @@ export default function page() {
       <button className="bg-green-500 p-4 rounded-lg" onClick={handleClick}>
         Save
       </button>
-      <button className="bg-red-500 p-4 rounded-lg" onClick={}>
+      <button
+        className="bg-red-500 p-4 rounded-lg"
+        onClick={() => console.log("clear")}
+      >
         Clear All
       </button>
     </>
