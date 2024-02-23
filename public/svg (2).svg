@@ -1,0 +1,20 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2fff/svg">
+    <g>
+        <rect id="svg_1" height="117" width="117" y="97.47368" x="119.52632" stroke="#fff" fill="#000" />
+        <rect id="svg_2" height="117" width="117" y="97.33112" x="352.57112" stroke="#fff" fill="#000" />
+        <rect id="svg_6" height="117" width="117" y="331.75904" x="119.71428" stroke="#fff" fill="#000" />
+        <rect id="svg_12" height="117" width="117" y="97.47368" x="236.85696" stroke="#fff" fill="#000" />
+        <rect id="svg_13" height="117" width="117" y="214.42839" x="119.71428" stroke="#fff" fill="#000" />
+        <rect id="svg_23" height="117" width="117" y="214.69946" x="353.62375" stroke="#fff" fill="#000" />
+        <rect id="svg_24" height="117" width="117" y="331.54148" x="353.62375" stroke="#fff" fill="#000" />
+        <rect id="svg_25" height="117" width="117" y="331.75904" x="237.08262" stroke="#fff" fill="#000" />
+        <path id="svg_30" d="m236.71507,331.59769l58.68416,-58.94732l58.68416,58.94732l-117.36832,0z" stroke="#fff"
+            fill="#000" />
+        <path transform="rotate(-180 295.926 243.704)" id="svg_31"
+            d="m237.24139,273.17668l58.68416,-58.94732l58.68415,58.94732l-117.36831,0z" stroke="#fff" fill="#000" />
+        <path transform="rotate(90 266.452 272.65)" id="svg_32"
+            d="m207.76772,302.12402l58.68416,-58.94732l58.68415,58.94732l-117.36831,0z" stroke="#fff" fill="#000" />
+        <path transform="rotate(-90 324.873 272.65)" id="svg_33"
+            d="m266.18873,302.12402l58.68416,-58.94732l58.68415,58.94732l-117.36831,0z" stroke="#fff" fill="#000" />
+    </g>
+</svg>
