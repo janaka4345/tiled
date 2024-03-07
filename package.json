@@ -9,6 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.25.0",
+    "@trpc/client": "^11.0.0-next-beta.311",
+    "@trpc/next": "^11.0.0-next-beta.311",
+    "@trpc/react-query": "^11.0.0-next-beta.311",
+    "@trpc/server": "^11.0.0-next-beta.311",
     "downloadjs": "^1.4.7",
     "drizzle-orm": "^0.29.4",
     "html-to-image": "^1.11.11",
@@ -16,7 +21,8 @@
     "postgres": "^3.4.3",
     "react": "^18",
     "react-dom": "^18",
-    "redis": "^4.6.13"
+    "redis": "^4.6.13",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
