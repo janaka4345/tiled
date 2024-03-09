@@ -5,7 +5,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 //mock a data  fetch
 async function fetchPosts(page) {
   await new Promise((resolve) => setTimeout(resolve, 1000));
-
+  //console.log();
   return posts.slice((page - 1) * 2, page * 2);
 }
 
