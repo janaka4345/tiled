@@ -7,3 +7,5 @@
 ## infinite scrolling with data fetch with server actoins
 
 ## infinite scrolling with data fetch with trpc -useinfinite query unsuccesful with trpc
+
+# optimistic updates with react-query
