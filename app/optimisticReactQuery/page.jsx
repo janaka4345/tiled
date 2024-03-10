@@ -29,7 +29,7 @@ export default function page() {
     queryKey: ["todos"],
     queryFn: () => todos,
   });
-  console.log(mutation);
+  //   console.log(mutation);
   return (
     <div>
       <button onClick={() => mutation.mutate({ id: 5, title: "todo 5" })}>
