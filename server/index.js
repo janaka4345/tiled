@@ -1,5 +1,5 @@
+import { placeholder } from "./routes/placeholder";
 import { publicProcedure, router } from "./trpc";
-
 
 const appRouter = router({
     userList: publicProcedure
@@ -8,6 +8,8 @@ const appRouter = router({
             const users = [10, 20, 30]
             return users;
         }),
+    placeholder,
+
 });
 
 // Export type router type signature,
